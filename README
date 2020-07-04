@@ -1,1 +1,86 @@
+/**********************************************************
+* Erin Yilmaz
+* HW3: Metro Simulator
+* Comp 15
+* README
+*
+*********************************************************/
 
+Compile/run:
+     - Compile using
+            make MetroSim
+     - run executable with
+            ./MetroSim stationsFile passFile [commands]
+
+
+Program Purpose:
+
+This homework assignment handles a running train to accomodate
+passengers arriving/departing a metro. Learn how to design and
+modularize code and work with documented libraries.
+
+
+Acknowledgements: I worked with Andrew Vu in office hours on this code to plan
+it and map out my data structures. I also looked up a lot of information on
+stack overflow. I also used the documents provided on the reference page for 
+the course.
+
+
+Files: 
+
+main.cpp:
+     STUDENT TO-DO: Main file should be short and handle simple driver
+     functions such as reading in files.
+
+MetroSim.cpp:
+     STUDENT TO-DO: Implementation of MetroSim class.  Main
+     functionality of running the Metro Simulation, should be able to
+     move trains and deal with passengers going on/off the train.
+
+MetroSim.h:
+        STUDENT TO-DO: Interface of MetroSim class.
+
+stations.txt:
+        an example file containing a list of stations.
+
+test_commands.txt:
+        sample list of commands that you could give to the simulator
+
+the_metroSim:
+        reference implementation for students to see how 
+
+
+Note:  the program should handle all cases.
+
+Data Structures: My data structures in this assignment are as follows: I used 
+two structs (one representing a station and one representing a passenger). My 
+station struct held an integer for the station number, a string for the station
+name, and a vector of passenger structs, which represented the line of 
+passengers at the arrival station. The passenger structs contained three
+integers; namely, the ID number of the passenger, and the stop numbers of the
+passenger's arrival and departure stop. In my class's private data members my 
+program has 2 vectors. The train vector holds passenger structs that represent
+passengers currently on the train. The station vector holds station structs
+that represent each station on the train's route. 
+
+
+Testing: I tested my code in multiple ways. I used unit testing to test my 
+modular functions. One of the first functions I wrote was the print_map
+function, and then I tested all of my commands' outputs against the
+reference implementation, comparing its output to my program's output. 
+I ran in to a lot of segmentation faults while testing, and this was probably
+my most common error. I also had some trouble with iterators in vector
+functions. I tested my functions when my vectors were empty and only had one
+element. I tested my functions with passengers who were going from stop
+numbers that were higher than and lower than their departure stop numbers.
+I tested my functions when a commandsFile was given and when input was read 
+through cin. I made sure to see that the passengers who were on the train were
+always supposed to be on the train, and I also ran diff with my output file and
+the reference implementation's output. Some of the specific tests I ran were
+putting 8 passengers at the same stop (p 2 5) and the same destination and
+running the m m command multiple times. This got me seg faults a lot, so I used
+this testing method to make sure my seg fault was gone. 
+
+
+Note: This homework comes partially implemented, but student must also
+create the driver and add class functionality.
