@@ -35,9 +35,6 @@ stations.txt:
 test_commands.txt:
         sample list of commands that you could give to the simulator
 
-the_metroSim:
-        reference implementation for students to see how 
-
 Data Structures: My data structures in this assignment are as follows: I used 
 two structs (one representing a station and one representing a passenger). My 
 station struct held an integer for the station number, a string for the station
