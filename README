@@ -1,10 +1,6 @@
-/**********************************************************
-* Erin Yilmaz
-* HW3: Metro Simulator
-* Comp 15
-* README
-*
-*********************************************************/
+Erin Yilmaz
+Completed Fall 2019
+README
 
 Compile/run:
      - Compile using
@@ -14,31 +10,21 @@ Compile/run:
 
 
 Program Purpose:
-
-This homework assignment handles a running train to accomodate
-passengers arriving/departing a metro. Learn how to design and
+Simulate a running train to accomodate passengers arriving/departing a metro. Learn how to design and
 modularize code and work with documented libraries.
 
-
-Acknowledgements: I worked with Andrew Vu in office hours on this code to plan
-it and map out my data structures. I also looked up a lot of information on
-stack overflow. I also used the documents provided on the reference page for 
-the course.
-
-
 Files: 
-
 main.cpp:
-     STUDENT TO-DO: Main file should be short and handle simple driver
+     Main file should be short and handle simple driver
      functions such as reading in files.
 
 MetroSim.cpp:
-     STUDENT TO-DO: Implementation of MetroSim class.  Main
+     Implementation of MetroSim class.  Main
      functionality of running the Metro Simulation, should be able to
      move trains and deal with passengers going on/off the train.
 
 MetroSim.h:
-        STUDENT TO-DO: Interface of MetroSim class.
+        Interface of MetroSim class.
 
 stations.txt:
         an example file containing a list of stations.
@@ -48,9 +34,6 @@ test_commands.txt:
 
 the_metroSim:
         reference implementation for students to see how 
-
-
-Note:  the program should handle all cases.
 
 Data Structures: My data structures in this assignment are as follows: I used 
 two structs (one representing a station and one representing a passenger). My 
@@ -82,5 +65,4 @@ running the m m command multiple times. This got me seg faults a lot, so I used
 this testing method to make sure my seg fault was gone. 
 
 
-Note: This homework comes partially implemented, but student must also
-create the driver and add class functionality.
+Note: Some starter code provided by instructor.
