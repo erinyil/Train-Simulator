@@ -8,6 +8,10 @@ Compile/run:
      - run executable with
             ./MetroSim stationsFile outputFile [commands]
 
+Move the train with "m m"
+Add a passenger at a stop with "p startStop destinationStop" (ex: p 3 9) to see them added to the stop's queue with their passenger ID
+Quit with "m f"
+Change output file with "f newOutputfile"
 
 Program Purpose:
 Simulate a running train to accomodate passengers arriving/departing a metro. Learn how to design and
