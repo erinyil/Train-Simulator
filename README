@@ -6,7 +6,7 @@ Compile/run:
      - Compile using
             make MetroSim
      - run executable with
-            ./MetroSim stationsFile passFile [commands]
+            ./MetroSim stationsFile outputFile [commands]
 
 
 Program Purpose:
